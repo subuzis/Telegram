@@ -17,7 +17,7 @@ def TELEGRAM_MSG():
 ###enviando doc telegram
 def TELEGRAM_DOC():
     bot = telepot.Bot(token)
-    file="screenshot.png"
+    file="screenshot.png" ##nesse caso o arquivo está no mesmo diretório do código
     bot.sendDocument(chat_id=chat_id, document=open(file, 'rb'))
     
 
